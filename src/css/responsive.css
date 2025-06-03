@@ -12,7 +12,7 @@
 
 @media (max-width: 992px) {
   .navbar-collapse {
-    background: rgba(139, 38, 53, 0.95);
+    background: rgba(102, 0, 51, 0.95);
     border-radius: 15px;
     margin-top: 10px;
     padding: 1rem;
@@ -31,11 +31,16 @@
     width: 100px;
     height: 100px;
   }
+
+  /* Adjust slogan banner on medium screens */
+  .slogan-banner {
+    top: 70px;
+  }
 }
 
 @media (max-width: 768px) {
   body {
-    padding-top: 70px;
+    padding-top: 100px; /* Reduced padding for mobile */
   }
 
   .product-card {
@@ -87,6 +92,13 @@
   .eu-country-card {
     margin-bottom: 1rem;
     padding: 1rem !important;
+  }
+
+  /* Adjust slogan banner on small screens */
+  .slogan-banner {
+    top: 60px;
+    padding: 5px 0;
+    font-size: 0.8rem;
   }
 }
 

@@ -2,16 +2,17 @@
 
 :root {
     /* Old Money Color Palette */
-    --primary-color: #8B2635; /* Deep burgundy red */
+    --primary-color: #660033; /* Changed to match new brand color */
     --secondary-color: #F5F3F0; /* Paper white */
     --accent-color: #C49B8B; /* Dusty rose */
     --success-color: #5A6B44; /* Forest green */
     --warning-color: #D4AF37; /* Antique gold */
     --dark-color: #2C1810; /* Dark brown */
-    --light-color: #FAF8F5; /* Cream white */
+    --light-color: #EDE8D0; /* Changed to match new background */
     --text-color: #3E2723; /* Rich brown text */
     --border-color: #E8E3DD; /* Soft border */
-    --shadow-color: rgba(139, 38, 53, 0.15); /* Burgundy shadow */
+    --shadow-color: rgba(102, 0, 51, 0.15); /* Updated shadow color */
+    --body-color:rgb(161, 157, 141); /* Light cream background */
 }
 
 * {
@@ -21,16 +22,17 @@
 }
 
 body {
+    /* Update body padding to account for navbar and slogan */
+    padding-top: 110px; /* Increased to accommodate both navbar and slogan banner */
     font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--body-color);
     background-color: var(--light-color);
-    padding-top: 76px; /* Account for fixed navbar */
 }
 
 /* Navigation Styles */
 .navbar {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #A73C52 100%) !important;
+    background: var(--primary-color) !important;
     border-bottom: 3px solid var(--warning-color);
     box-shadow: 0 4px 20px var(--shadow-color);
     backdrop-filter: blur(10px);
@@ -60,15 +62,28 @@ body {
     transform: translateY(-2px);
 }
 
+/* Slogan Banner Styles */
+.slogan-banner {
+    position: fixed;
+    top: 110px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(48, 73, 56, 0.95);
+    font-size: 1.2rem;
+}
+
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #A73C52 50%, var(--dark-color) 100%);
-    min-height: 100vh;
+    background: var(--body-color);
+    min-height: 90vh; /* Slightly reduced to account for the additional padding */
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     border-bottom: 5px solid var(--warning-color);
+    margin-top: 0px; /* Remove any additional margin that might push it down */
 }
 
 .hero-section::before {
@@ -814,6 +829,22 @@ body {
     border-color: var(--warning-color);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px var(--shadow-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color) !important;
+    border-top: 3px solid var(--warning-color);
+}
+
+footer h5, footer h6 {
+    color: var(--warning-color);
+}
+
+footer .social-links a:hover {
+    color: var(--warning-color) !important;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
 }
 
 /* Responsive Design Enhancements */
