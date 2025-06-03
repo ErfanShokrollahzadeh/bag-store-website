@@ -212,7 +212,11 @@ class ShoppingCart {
                     <div class="col-md-6">
                         <div class="d-flex align-items-center">
                             <div class="cart-item-image me-3">
-                                <i class="fas fa-shopping-bag fa-2x text-primary"></i>
+                                ${
+                                  item.image
+                                    ? `<img src="${item.image}" alt="${item.name}" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">`
+                                    : `<i class="fas fa-shopping-bag fa-2x text-primary"></i>`
+                                }
                             </div>
                             <div>
                                 <h6 class="mb-1">${item.name}</h6>
