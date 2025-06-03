@@ -1,37 +1,136 @@
-/* Responsive styles for the bag store website */
+/* Responsive styles for the old money themed bag store website */
 
 @media (max-width: 1200px) {
-    .container {
-        padding: 0 15px;
-    }
+  .container {
+    padding: 0 20px;
+  }
+
+  .product-category-card {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .navbar-nav {
-        margin-top: 10px;
-    }
+  .navbar-collapse {
+    background: rgba(139, 38, 53, 0.95);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 1rem;
+    border: 2px solid var(--warning-color);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .category-icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 768px) {
-    .product-card {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    .product-card img {
-        max-width: 100%;
-        height: auto;
-    }
+  body {
+    padding-top: 70px;
+  }
+
+  .product-card {
+    margin-bottom: 25px;
+    border-radius: 15px;
+  }
+
+  .product-card img {
+    height: 200px !important;
+  }
+
+  .hero-section {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .display-4 {
+    font-size: 2.2rem !important;
+  }
+
+  .bag-showcase {
+    height: 200px;
+    margin-top: 2rem;
+  }
+
+  .floating-bag {
+    position: static;
+    display: inline-block;
+    margin: 0 1rem;
+    animation: none;
+  }
+
+  .feature-box {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+  }
+
+  .product-category-card {
+    margin-bottom: 2rem;
+    border-radius: 15px;
+  }
+
+  .category-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .eu-country-card {
+    margin-bottom: 1rem;
+    padding: 1rem !important;
+  }
 }
 
 @media (max-width: 576px) {
-    .footer {
-        text-align: center;
-    }
-    .footer-links {
-        display: block;
-        margin: 10px 0;
-    }
+  .btn-lg {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .flag-emoji {
+    font-size: 1.8rem;
+  }
+
+  .product-card .card-body {
+    padding: 1rem;
+  }
+
+  .product-card .card-footer {
+    padding: 0.75rem 1rem;
+  }
+
+  .feature-box {
+    padding: 1rem;
+  }
+
+  .category-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-icon i {
+    font-size: 2rem !important;
+  }
 }
