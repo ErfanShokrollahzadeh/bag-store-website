@@ -38,12 +38,29 @@ body {
     backdrop-filter: blur(10px);
 }
 
+/* Logo Image Styles */
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--warning-color);
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .logo-img {
+    transform: scale(1.1);
+}
+
 .navbar-brand {
     font-family: 'Georgia', serif !important;
     font-size: 1.8rem !important;
     font-weight: 700 !important;
     color: var(--secondary-color) !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav .nav-link {
@@ -108,7 +125,8 @@ body {
 }
 
 .payment-badge {
-    width: 202px;
+    width: 424px;
+    background-color: #D4AF37;
     animation: pulse 2s infinite;
     border: 2px solid var(--warning-color);
     border-radius: 15px;
@@ -835,6 +853,21 @@ body {
 footer {
     background-color: var(--primary-color) !important;
     border-top: 3px solid var(--warning-color);
+}
+
+/* Footer Logo Styles */
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--warning-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
 }
 
 footer h5, footer h6 {

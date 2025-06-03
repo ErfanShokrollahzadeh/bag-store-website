@@ -43,6 +43,19 @@
     padding-top: 100px; /* Reduced padding for mobile */
   }
 
+  /* Responsive logo size for mobile */
+  .logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Adjust slogan banner on small screens */
+  .slogan-banner {
+    top: 60px;
+    padding: 5px 0;
+    font-size: 0.8rem;
+  }
+
   .product-card {
     margin-bottom: 25px;
     border-radius: 15px;
@@ -94,11 +107,14 @@
     padding: 1rem !important;
   }
 
-  /* Adjust slogan banner on small screens */
-  .slogan-banner {
-    top: 60px;
-    padding: 5px 0;
-    font-size: 0.8rem;
+  /* Responsive footer logo */
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  footer h5 {
+    font-size: 1.1rem;
   }
 }
 
