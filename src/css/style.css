@@ -173,6 +173,24 @@ body {
     color: var(--secondary-color);
 }
 
+.bag-4 {
+    top: 80%;
+    right: 10%;
+    animation-delay: 3s;
+    color: var(--primary-color);
+}
+
+.bag-5 {
+    bottom: 70%;
+    left: 70%;
+    animation-delay: 4s;
+    color: var(--success-color);
+}
+
+.method{
+    background-color: skyblue;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(5deg); }
