@@ -1,0 +1,349 @@
+# EU Bag Store - .gitignore
+
+# ========================
+# Operating System Files
+# ========================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ========================
+# Editor and IDE Files
+# ========================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ========================
+# Node.js and NPM
+# ========================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# ========================
+# Build and Distribution
+# ========================
+
+# Build directories
+build/
+dist/
+out/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ========================
+# Logs and Databases
+# ========================
+
+# Log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================
+# Temporary Files
+# ========================
+
+# Temporary folders
+tmp/
+temp/
+
+# Cache directories
+.cache/
+.tmp/
+
+# ========================
+# Environment and Config
+# ========================
+
+# Environment variables
+.env*
+!.env.example
+
+# Configuration files with sensitive data
+config/database.yml
+config/secrets.yml
+
+# ========================
+# Web Development Specific
+# ========================
+
+# Sass cache
+.sass-cache/
+
+# Less cache
+.lesshst
+
+# Compass
+.compass/
+
+# CSS source maps
+*.css.map
+
+# JavaScript source maps
+*.js.map
+
+# ========================
+# Testing and Coverage
+# ========================
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Jest
+.jest/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# ========================
+# Deployment and Hosting
+# ========================
+
+# Netlify
+.netlify/
+
+# Vercel
+.vercel/
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# AWS
+.aws/
+
+# ========================
+# Package Managers
+# ========================
+
+# Yarn
+yarn.lock
+.yarn/
+.pnp.*
+
+# PNPM
+pnpm-lock.yaml
+
+# Rush
+common/temp/
+
+# ========================
+# Security and Keys
+# ========================
+
+# API keys and secrets
+*.key
+*.pem
+*.p12
+*.p8
+secrets.json
+credentials.json
+
+# SSL certificates
+*.crt
+*.cer
+
+# ========================
+# Project Specific
+# ========================
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Generated documentation
+docs/build/
+
+# Production environment files
+.env.production
+
+# Local configuration overrides
+config.local.js
+config.local.json
+
+# User uploads (if implementing file uploads)
+uploads/
+user-content/
+
+# Payment processing logs
+payment-logs/
+
+# Analytics data
+analytics/
+
+# Customer data exports
+exports/
+
+# ========================
+# Comments for Team
+# ========================
+
+# Add any project-specific files or directories that should be ignored
+# For example:
+# - Custom build scripts output
+# - Local development databases
+# - Generated product images
+# - Customer data files
+# - Third-party API keys
+
+# Keep this file updated as the project grows!

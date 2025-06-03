@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EU Bag Store - Premium Bags for Europe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-shopping-bag me-2"></i>EU Bag Store
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="cart-toggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="badge bg-warning text-dark"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="display-4 fw-bold text-white mb-4">
+                Premium Bags for the
+                <span class="text-warning">European Union</span>
+              </h1>
+              <p class="lead text-white-50 mb-4">
+                Discover our exclusive collection of sports bags, student bags,
+                and luxury leather bags. Designed for European lifestyles,
+                shipped across all EU countries.
+              </p>
+              <div class="eu-badge mb-4">
+                <span class="badge bg-warning text-dark fs-6 p-3">
+                  <i class="fas fa-star me-2"></i>Exclusive EU Seller
+                </span>
+              </div>
+              <div class="d-flex flex-wrap gap-3">
+                <a
+                  href="pages/products.html"
+                  class="btn btn-warning btn-lg px-4 py-3"
+                >
+                  <i class="fas fa-shopping-bag me-2"></i>Shop Now
+                </a>
+                <a
+                  href="#products-preview"
+                  class="btn btn-outline-light btn-lg px-4 py-3"
+                >
+                  <i class="fas fa-eye me-2"></i>Browse Collection
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image text-center">
+              <div class="bag-showcase">
+                <div class="floating-bag bag-1">
+                  <i class="fas fa-briefcase fa-4x text-warning"></i>
+                </div>
+                <div class="floating-bag bag-2">
+                  <i class="fas fa-backpack fa-4x text-warning"></i>
+                </div>
+                <div class="floating-bag bag-3">
+                  <i class="fas fa-shopping-bag fa-4x text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EU Market Info -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="fw-bold">Serving All European Union Countries</h2>
+            <p class="lead text-muted">
+              Quality bags delivered across 27 EU member states
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div class="feature-box">
+              <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+              <h5>Free EU Shipping</h5>
+              <p class="text-muted">
+                Free delivery to all EU countries on orders over €50
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="feature-box">
+              <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+              <h5>EU Quality Standards</h5>
+              <p class="text-muted">
+                All products meet strict European quality regulations
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="feature-box">
+              <i class="fas fa-euro-sign fa-3x text-primary mb-3"></i>
+              <h5>Euro Pricing</h5>
+              <p class="text-muted">
+                Transparent pricing in EUR with no hidden fees
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section id="products-preview" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="fw-bold">Our Premium Bag Collection</h2>
+            <p class="lead text-muted">
+              Explore our three main categories designed for European customers
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="product-category-card h-100">
+              <div class="card-body text-center p-4">
+                <div class="category-icon mb-4">
+                  <i class="fas fa-dumbbell fa-4x text-primary"></i>
+                </div>
+                <h4 class="card-title">Sports Bags</h4>
+                <p class="card-text text-muted">
+                  Professional sports bags for athletes and fitness enthusiasts.
+                  Durable, spacious, and designed for active lifestyles.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Gym Bags
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Team Sports
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Travel Sports
+                  </li>
+                </ul>
+                <a
+                  href="pages/products.html#sports"
+                  class="btn btn-primary btn-lg w-100"
+                >
+                  <i class="fas fa-arrow-right me-2"></i>Shop Sports Bags
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="product-category-card h-100">
+              <div class="card-body text-center p-4">
+                <div class="category-icon mb-4">
+                  <i class="fas fa-graduation-cap fa-4x text-success"></i>
+                </div>
+                <h4 class="card-title">Student Bags</h4>
+                <p class="card-text text-muted">
+                  Perfect for students of all ages. From elementary school to
+                  university, find the ideal bag for academic success.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>School
+                    Backpacks
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>University
+                    Bags
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Laptop Cases
+                  </li>
+                </ul>
+                <a
+                  href="pages/products.html#student"
+                  class="btn btn-success btn-lg w-100"
+                >
+                  <i class="fas fa-arrow-right me-2"></i>Shop Student Bags
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="product-category-card h-100">
+              <div class="card-body text-center p-4">
+                <div class="category-icon mb-4">
+                  <i class="fas fa-briefcase fa-4x text-warning"></i>
+                </div>
+                <h4 class="card-title">Leather Bags</h4>
+                <p class="card-text text-muted">
+                  Luxury leather bags crafted from premium European leather.
+                  Elegant, professional, and built to last a lifetime.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Business Bags
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Handbags
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Travel Leather
+                  </li>
+                </ul>
+                <a
+                  href="pages/products.html#leather"
+                  class="btn btn-warning btn-lg w-100"
+                >
+                  <i class="fas fa-arrow-right me-2"></i>Shop Leather Bags
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EU Countries -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="fw-bold">We Ship to All EU Countries</h2>
+            <p class="lead">Click on your country to start shopping</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇩🇪</span>
+              <p class="mb-0">Germany</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇫🇷</span>
+              <p class="mb-0">France</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇮🇹</span>
+              <p class="mb-0">Italy</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇪🇸</span>
+              <p class="mb-0">Spain</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇳🇱</span>
+              <p class="mb-0">Netherlands</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇵🇱</span>
+              <p class="mb-0">Poland</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇧🇪</span>
+              <p class="mb-0">Belgium</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="eu-country-card text-center p-3">
+              <span class="flag-emoji">🇦🇹</span>
+              <p class="mb-0">Austria</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="pages/products.html" class="btn btn-warning btn-lg">
+            <i class="fas fa-globe-europe me-2"></i>Shop from Your Country
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">
+              <i class="fas fa-shopping-bag me-2"></i>EU Bag Store
+            </h5>
+            <p class="text-light">
+              Your trusted partner for premium bags across the European Union.
+              Quality, style, and reliability delivered to your doorstep.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Products</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="pages/products.html#sports"
+                  class="text-light text-decoration-none"
+                  >Sports Bags</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/products.html#student"
+                  class="text-light text-decoration-none"
+                  >Student Bags</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/products.html#leather"
+                  class="text-light text-decoration-none"
+                  >Leather Bags</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="pages/about.html"
+                  class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/contact.html"
+                  class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >EU Shipping</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="fw-bold mb-3">EU Shipping Info</h6>
+            <p class="text-light small">
+              Free shipping on orders over €50 to all EU countries. Express
+              delivery available. VAT included in all prices.
+            </p>
+            <div class="eu-flags">
+              <span class="me-1">🇪🇺</span>
+              <span class="small text-light"
+                >Serving all 27 EU member states</span
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 small">
+              &copy; 2025 EU Bag Store. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0 small">Made for the European Union 🇪🇺</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

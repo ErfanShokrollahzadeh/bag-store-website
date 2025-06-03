@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EU Bag Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <i class="fas fa-shopping-bag me-2"></i>EU Bag Store
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="cart-toggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="badge bg-warning text-dark"
+                  >0</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-bold">Contact EU Bag Store</h1>
+            <p class="lead">
+              We're here to help customers across the European Union
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fas fa-headset fa-4x text-warning"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4">
+            <div class="contact-card text-center p-4 h-100 shadow-sm rounded">
+              <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+              <h5>Email Support</h5>
+              <p class="text-muted">Get in touch with our support team</p>
+              <a
+                href="mailto:support@eubagstore.eu"
+                class="btn btn-outline-primary"
+              >
+                support@eubagstore.eu
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-card text-center p-4 h-100 shadow-sm rounded">
+              <i class="fas fa-phone fa-3x text-success mb-3"></i>
+              <h5>Phone Support</h5>
+              <p class="text-muted">Call us during business hours</p>
+              <a href="tel:+31123456789" class="btn btn-outline-success">
+                +31 (0) 123 456 789
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-card text-center p-4 h-100 shadow-sm rounded">
+              <i class="fas fa-comments fa-3x text-warning mb-3"></i>
+              <h5>Live Chat</h5>
+              <p class="text-muted">Chat with us in real-time</p>
+              <button
+                class="btn btn-outline-warning"
+                onclick="alert('Live chat feature coming soon!')"
+              >
+                Start Chat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="card shadow-lg border-0">
+              <div class="card-header bg-primary text-white text-center py-4">
+                <h3 class="mb-0">
+                  <i class="fas fa-paper-plane me-2"></i>Send Us a Message
+                </h3>
+                <p class="mb-0 mt-2">We typically respond within 24 hours</p>
+              </div>
+              <div class="card-body p-5">
+                <form id="contactForm" class="contact-form">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label"
+                        >First Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label"
+                        >Last Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row g-3 mt-2">
+                    <div class="col-md-6">
+                      <label for="email" class="form-label"
+                        >Email Address *</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="country" class="form-label"
+                        >EU Country *</label
+                      >
+                      <select
+                        class="form-select"
+                        id="country"
+                        name="country"
+                        required
+                      >
+                        <option value="">Select your country...</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cyprus">Cyprus</option>
+                        <option value="Czech Republic">Czech Republic</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sweden">Sweden</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="subject" class="form-label">Subject *</label>
+                    <select
+                      class="form-select"
+                      id="subject"
+                      name="subject"
+                      required
+                    >
+                      <option value="">Select a subject...</option>
+                      <option value="Product Inquiry">Product Inquiry</option>
+                      <option value="Order Support">Order Support</option>
+                      <option value="Shipping Question">
+                        Shipping Question
+                      </option>
+                      <option value="Return/Exchange">Return/Exchange</option>
+                      <option value="Technical Support">
+                        Technical Support
+                      </option>
+                      <option value="Partnership">Partnership Inquiry</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="mt-3">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Please describe your inquiry in detail..."
+                      required
+                    ></textarea>
+                    <div class="form-text">Minimum 10 characters required</div>
+                  </div>
+
+                  <div class="mt-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                      />
+                      <label class="form-check-label" for="newsletter">
+                        Subscribe to our newsletter for updates and special
+                        offers
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="mt-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="privacy"
+                        name="privacy"
+                        required
+                      />
+                      <label class="form-check-label" for="privacy">
+                        I agree to the
+                        <a href="#" class="text-primary">Privacy Policy</a> and
+                        <a href="#" class="text-primary">Terms of Service</a> *
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                      <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Hours & FAQ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h4 class="text-primary mb-4">
+                  <i class="fas fa-clock me-2"></i>Business Hours
+                </h4>
+                <div class="business-hours">
+                  <div
+                    class="d-flex justify-content-between py-2 border-bottom"
+                  >
+                    <span>Monday - Friday</span>
+                    <span class="fw-bold">9:00 AM - 6:00 PM CET</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between py-2 border-bottom"
+                  >
+                    <span>Saturday</span>
+                    <span class="fw-bold">10:00 AM - 4:00 PM CET</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-2">
+                    <span>Sunday</span>
+                    <span class="text-muted">Closed</span>
+                  </div>
+                </div>
+                <div class="alert alert-info mt-3">
+                  <i class="fas fa-info-circle me-2"></i>
+                  <small>We support customers in multiple EU languages</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h4 class="text-primary mb-4">
+                  <i class="fas fa-question-circle me-2"></i>Quick FAQ
+                </h4>
+                <div class="accordion" id="faqAccordion">
+                  <div class="accordion-item border-0 mb-2">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1"
+                      >
+                        Do you ship to all EU countries?
+                      </button>
+                    </h6>
+                    <div
+                      id="faq1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Yes! We ship to all 27 EU member states with free
+                        shipping on orders over €50.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0 mb-2">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2"
+                      >
+                        What's your return policy?
+                      </button>
+                    </h6>
+                    <div
+                      id="faq2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        We offer a 30-day return policy for all products in
+                        original condition.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3"
+                      >
+                        Are prices in EUR inclusive of VAT?
+                      </button>
+                    </h6>
+                    <div
+                      id="faq3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Yes, all prices displayed include VAT according to EU
+                        regulations.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">
+              <i class="fas fa-shopping-bag me-2"></i>EU Bag Store
+            </h5>
+            <p class="text-light">
+              Your trusted partner for premium bags across the European Union.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="fw-bold mb-3">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="../index.html" class="text-light text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-light text-decoration-none"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-light text-decoration-none"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="fw-bold mb-3">Support</h6>
+            <p class="text-light small">
+              Email: support@eubagstore.eu<br />
+              Phone: +31 (0) 123 456 789
+            </p>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 small">
+              &copy; 2025 EU Bag Store. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0 small">Made for the European Union 🇪🇺</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+
+    <script>
+      // Contact form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Simple form validation
+          const message = document.getElementById("message").value;
+          if (message.length < 10) {
+            alert(
+              "Please provide a more detailed message (minimum 10 characters)."
+            );
+            return;
+          }
+
+          // Simulate form submission
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            alert(
+              "Thank you for your message! We will get back to you within 24 hours."
+            );
+            this.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          }, 2000);
+        });
+    </script>
+  </body>
+</html>
