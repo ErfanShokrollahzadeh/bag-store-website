@@ -1,4 +1,4 @@
-// EU Bag Store - Enhanced JavaScript functionality
+// Premium Bag Store - Enhanced JavaScript functionality
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -14,20 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // EU Country cards interaction
-  const countryCards = document.querySelectorAll(".eu-country-card");
-  countryCards.forEach((card) => {
+  // Payment method cards interaction
+  const paymentCards = document.querySelectorAll(".payment-card");
+  paymentCards.forEach((card) => {
     card.addEventListener("click", function () {
-      const countryName = this.querySelector("p").textContent;
+      const paymentMethod = this.querySelector("p").textContent;
       // Add a visual feedback
       this.style.transform = "scale(1.1)";
       setTimeout(() => {
         this.style.transform = "scale(1.05)";
       }, 150);
 
-      // Redirect to products page with country context
-      window.location.href =
-        "pages/products.html?country=" + encodeURIComponent(countryName);
+      // Show payment method selected feedback
+      console.log("Selected payment method:", paymentMethod);
+
+      // You could redirect to checkout or show payment form
+      // window.location.href = "pages/products.html?payment=" + encodeURIComponent(paymentMethod);
     });
   });
 
