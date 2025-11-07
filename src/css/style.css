@@ -187,8 +187,10 @@ body {
     color: var(--success-color);
 }
 
-.method{
-    background-color: skyblue;
+.method {
+    background: linear-gradient(135deg, rgba(102, 0, 51, 0.95), rgba(139, 38, 53, 0.85));
+    border-top: 3px solid var(--warning-color);
+    border-bottom: 3px solid var(--warning-color);
 }
 
 @keyframes float {
@@ -335,6 +337,130 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px var(--shadow-color);
     border-color: var(--accent-color);
+}
+
+/* Support Customers Section */
+.support-section {
+    background: linear-gradient(180deg, rgba(245, 243, 240, 0.85), rgba(237, 232, 208, 0.95));
+    border-top: 3px solid var(--warning-color);
+    border-bottom: 3px solid var(--warning-color);
+    position: relative;
+}
+
+.support-section::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(102, 0, 51, 0.2), transparent);
+}
+
+.support-intro {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.support-card {
+    background: var(--secondary-color);
+    border: 2px solid var(--border-color);
+    border-radius: 22px;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 35px var(--shadow-color);
+    transition: all 0.4s ease;
+}
+
+.support-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--warning-color), var(--accent-color));
+}
+
+.support-card:hover {
+    border-color: var(--primary-color);
+}
+
+.support-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+    background: linear-gradient(135deg, var(--primary-color), rgba(102, 0, 51, 0.85));
+    color: var(--warning-color);
+    box-shadow: 0 10px 30px rgba(102, 0, 51, 0.25);
+    font-size: 1.9rem;
+}
+
+.support-card h3 {
+    font-family: 'Georgia', serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.support-card p {
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+.support-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-color);
+}
+
+.support-list i {
+    color: var(--success-color);
+    margin-top: 0.2rem;
+}
+
+.support-card .btn-outline-light {
+    border-color: var(--primary-color);
+    color: var(--primary-color) !important;
+    background: transparent;
+}
+
+.support-card .btn-outline-light:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color) !important;
+    border-color: var(--warning-color);
+    box-shadow: 0 10px 25px var(--shadow-color);
+}
+
+.support-cta {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid var(--border-color);
+    border-radius: 28px;
+    padding: 2.5rem;
+    box-shadow: 0 18px 45px rgba(102, 0, 51, 0.18);
+    position: relative;
+}
+
+.support-cta::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border-radius: 22px;
+    border: 1px dashed rgba(102, 0, 51, 0.25);
+}
+
+.support-cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
 
 /* Product Category Cards */

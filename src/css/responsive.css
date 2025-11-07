@@ -32,6 +32,10 @@
     height: 100px;
   }
 
+  .support-card {
+    padding: 2rem 1.75rem;
+  }
+
   /* Adjust slogan banner on medium screens */
   .slogan-banner {
     top: 70px;
@@ -102,6 +106,24 @@
     height: 80px;
   }
 
+  .support-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .support-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .support-list li {
+    justify-content: center;
+  }
+
+  .support-cta {
+    padding: 2rem;
+  }
+
   .eu-country-card {
     margin-bottom: 1rem;
     padding: 1rem !important;
@@ -160,5 +182,17 @@
 
   .category-icon i {
     font-size: 2rem !important;
+  }
+
+  .support-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .support-cta {
+    padding: 1.75rem;
+  }
+
+  .support-cta::before {
+    inset: 8px;
   }
 }

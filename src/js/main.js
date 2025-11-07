@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Observe feature boxes and product cards
   document
-    .querySelectorAll(".feature-box, .product-category-card")
+    .querySelectorAll(
+      ".feature-box, .product-category-card, .support-card, .support-cta"
+    )
     .forEach((el) => {
       el.style.opacity = "0";
       el.style.transform = "translateY(20px)";
