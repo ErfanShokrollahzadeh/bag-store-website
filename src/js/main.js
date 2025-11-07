@@ -1,5 +1,7 @@
 // Premium Bag Store - Enhanced JavaScript functionality
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
+  await loadProductGrids();
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -51,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Observe feature boxes and product cards
   document
     .querySelectorAll(
-      ".feature-box, .product-category-card, .support-card, .support-cta"
+      ".feature-box, .product-category-card, .support-card, .support-cta, .product-card"
     )
     .forEach((el) => {
       el.style.opacity = "0";
@@ -91,6 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 2000);
     });
   });
+
+  setupProductFilters();
 
   function addToCart(item) {
     const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
@@ -211,6 +215,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add loading states to buttons
   document.querySelectorAll(".btn").forEach((btn) => {
     btn.addEventListener("click", function () {
+      if (this.dataset.productFilter) {
+        return;
+      }
+
       if (this.classList.contains("btn-loading")) return;
 
       const originalText = this.innerHTML;
@@ -245,4 +253,87 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   console.log("EU Bag Store - Website loaded successfully! 🇪🇺");
+
+  async function loadProductGrids() {
+    const grids = document.querySelectorAll("[data-product-grid]");
+    if (!grids.length) {
+      return;
+    }
+
+    const pathPrefix = window.location.pathname.includes("/pages/")
+      ? "../"
+      : "";
+
+    try {
+      const response = await fetch(
+        `${pathPrefix}components/product-cards.html`
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const templateWrapper = document.createElement("div");
+      templateWrapper.innerHTML = await response.text();
+      const fragments = templateWrapper.querySelectorAll(
+        ".product-card-fragment"
+      );
+
+      grids.forEach((grid) => {
+        const categoryFilter = grid.dataset.productGrid || "all";
+
+        fragments.forEach((fragment) => {
+          const fragmentCategory = fragment.getAttribute(
+            "data-product-category"
+          );
+
+          if (categoryFilter === "all" || fragmentCategory === categoryFilter) {
+            const column = fragment.firstElementChild.cloneNode(true);
+            column.setAttribute("data-product-category", fragmentCategory);
+            grid.appendChild(column);
+          }
+        });
+      });
+    } catch (error) {
+      console.error("Failed to load product cards:", error);
+    }
+  }
+
+  function setupProductFilters() {
+    const filterButtons = document.querySelectorAll("[data-product-filter]");
+    if (!filterButtons.length) {
+      return;
+    }
+
+    const targetGrid = document.querySelector('[data-product-grid="all"]');
+    if (!targetGrid) {
+      return;
+    }
+
+    const toggleActiveState = (activeButton) => {
+      filterButtons.forEach((button) => {
+        const isActive = button === activeButton;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+    };
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        const filterValue = this.dataset.productFilter || "all";
+        toggleActiveState(this);
+
+        const productColumns = targetGrid.querySelectorAll(
+          "[data-product-category]"
+        );
+
+        productColumns.forEach((column) => {
+          const matches =
+            filterValue === "all" ||
+            column.dataset.productCategory === filterValue;
+          column.classList.toggle("d-none", !matches);
+        });
+      });
+    });
+  }
 });

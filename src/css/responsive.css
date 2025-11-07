@@ -106,6 +106,17 @@
     height: 80px;
   }
 
+  .product-filter-group {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .product-filter-group .btn {
+    flex: 1 1 140px;
+  }
+
   .support-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -182,6 +193,10 @@
 
   .category-icon i {
     font-size: 2rem !important;
+  }
+
+  .product-filter-group .btn {
+    flex: 1 1 120px;
   }
 
   .support-card {

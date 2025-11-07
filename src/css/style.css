@@ -463,6 +463,32 @@ body {
     text-align: center;
 }
 
+/* Product Filter Controls */
+.product-filter-group .btn {
+    border-radius: 999px;
+    border: 2px solid rgba(102, 0, 51, 0.3);
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--primary-color);
+    background: rgba(245, 243, 240, 0.6);
+    transition: all 0.3s ease;
+}
+
+.product-filter-group .btn:hover {
+    background: var(--secondary-color);
+    border-color: var(--warning-color);
+    color: var(--primary-color);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.product-filter-group .btn.active {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--warning-color);
+    box-shadow: 0 12px 30px var(--shadow-color);
+}
+
 /* Product Category Cards */
 .product-category-card {
     background: var(--secondary-color);
